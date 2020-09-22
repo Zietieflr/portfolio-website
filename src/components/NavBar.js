@@ -1,13 +1,14 @@
 import React from 'react'
+import { BrowserRouter as Router, NavLink} from "react-router-dom"
 
 export default function NavBar() {
   return(
     <nav>
-        <a href="/about">About</a>
-        <a href="/contact">Contact Me</a>
-        <a href="/github">GitHub</a>
-        <a href="/medium">Medium</a>
-        <a href="/projects">Projects</a>
+      <NavLink to="/about">About</NavLink>
+      <NavLink to="/contact">Contact Me</NavLink>
+      <NavLink to="/github">GitHub</NavLink>
+      <NavLink to="/medium">Medium</NavLink>
+      <NavLink to="/projects">Projects</NavLink>
     </nav>
   )
 }

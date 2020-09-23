@@ -1,5 +1,5 @@
 import React from "react";
-import { Route, Switch, BrowserRouter as Router} from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 import NavBar from "./components/NavBar";
 import About from "./components/About";
@@ -13,29 +13,26 @@ import "./App.css";
 function App() {
   return (
     <main className="App">
-      <h1>Logan McGuire</h1>
       <Router>
-        <NavBar/>
-        <section>
-          {/* Render content based off of Router */}
-          <Switch>
-            <Route path="/about" render={(routerProps) => {
-              return <About /> }}
-            />
-            <Route path="/contact" render={(routerProps) => {
-              return <ContactMe /> }}
-            />
-            <Route path="/github" render={(routerProps) => {
-              return <GitHub /> }}
-            />
-            <Route path="/medium" render={(routerProps) => {
-              return <Medium /> }}
-            />
-            <Route path="/projects" render={(routerProps) => {
-              return <Projects /> }}
-            />
-          </Switch>
-        </section>
+        <h1><Link to="/">Logan McGuire</Link></h1>
+        <NavBar />
+        <Switch>
+          <Route path="/about" render={(routerProps) => {
+            return <About /> }}
+          />
+          <Route path="/contact" render={(routerProps) => {
+            return <ContactMe /> }}
+          />
+          <Route path="/github" render={(routerProps) => {
+            return <GitHub /> }}
+          />
+          <Route path="/medium" render={(routerProps) => {
+            return <Medium /> }}
+          />
+          <Route path="/projects" render={(routerProps) => {
+            return <Projects routerProps={routerProps} /> }}
+          />
+        </Switch>
       </Router>
     </main>
   );

@@ -2,13 +2,14 @@ import React from "react";
 import { Link, Switch, Route } from "react-router-dom"
 
 import Project from "./Project"
+import ProjectNavigation from "./ProjectNavigation";
 import projects from "../helpers/projects"
 
 export default function Projects(props){
   const renderProjects = () => {
     return projects().map(project => {
       const key = project["key"]
-      return <li key={key}><Link to={"/projects/" + key} >{project["name"]}</Link></li>
+      return <ProjectNavigation key={key} project={project} />
     })
   }
 
@@ -21,7 +22,13 @@ export default function Projects(props){
       <h3>Projects</h3>
       <Switch>
         <Route exact path="/projects" render={() => {
-          return <ul>{renderProjects()}</ul>
+          return (
+            <nav className="projectNav">
+              <ul className="projectNav">
+                {renderProjects()}
+              </ul>
+            </nav>
+          )
         }} />
         <Route strict path="/projects/" render={(routerProps) => {
           return <Project project={findProject()} />

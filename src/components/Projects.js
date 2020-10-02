@@ -1,5 +1,5 @@
 import React from "react";
-import { Link, Switch, Route } from "react-router-dom"
+import { Switch, Route } from "react-router-dom"
 
 import Project from "./Project"
 import ProjectNavigation from "./ProjectNavigation";
@@ -18,7 +18,7 @@ export default function Projects(props){
     return projects().find(project => project["key"] === key)
   }
   return(
-    <section>
+    <>
       <h3>Projects</h3>
       <Switch>
         <Route exact path="/projects" render={() => {
@@ -34,6 +34,6 @@ export default function Projects(props){
           return <Project project={findProject()} />
         }} />
       </Switch>
-    </section>
+    </>
   )
 }

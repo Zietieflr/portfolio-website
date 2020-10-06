@@ -49,7 +49,7 @@ export default function Medium(){
   function verifyArticleWidget() {
     return articleWidgetWorking
       ? <article id="medium-widget"></article>
-      : <p className="widgetError">
+      : <p className="widget-error">
         Sorry, Medium is being shy and doesn't want to show itself. 
         You can see my articles <a href={url("medium")}>here.</a>
       </p>

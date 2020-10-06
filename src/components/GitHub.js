@@ -8,7 +8,7 @@ export default function GitHub(){
   function addGitHubScript(src) {
     return new Promise(function(resolve, reject) {
       const $script = document.createElement("script");
-      $script.id = "gitHubScript";
+      $script.id = "git-hub-script";
       $script.src = src;
       $script.addEventListener("load", resolve);
       $script.addEventListener("error", reject)
@@ -19,8 +19,12 @@ export default function GitHub(){
 
   function renderGitHubScript() {
     const $renderGitHub = document.createElement("script");
-    $renderGitHub.id = "renderingScript";
-    $renderGitHub.innerHTML = `GitHubCalendar("#git-hub-calendar", "Zietieflr", { responsive: true})`;
+    $renderGitHub.id = "rendering-script";
+    $renderGitHub.innerHTML = `GitHubCalendar("#git-hub-calendar", "Zietieflr", {
+      responsive: true,
+      global_stats: false,
+      tooltips: true,
+    })`;
     $renderGitHub.async = true; 
     document.body.appendChild($renderGitHub);
   }
@@ -32,16 +36,16 @@ export default function GitHub(){
   useEffect(() => {    
     addGitHubScript(url("gitHubWidget")).then(renderGitHubScript, renderError);
     return () => {
-      const $rendingScript = document.getElementById("renderingScript");
-      const $mediumScript = document.getElementById("mediumScript");
+      const $rendingScript = document.getElementById("rendering-script");
+      const $gitHubScript = document.getElementById("git-hub-script");
       document.body.removeChild($rendingScript);
-      document.body.removeChild($mediumScript);
+      document.body.removeChild($gitHubScript);
     }
   }, []);
 
   function verifyGitHubWidget() {
     return gitHubScriptWorking
-      ? <article id="git-hub-calendar"></article>
+      ? <figure id="git-hub-calendar"></figure>
       : <p className="widget-error">
         Sorry, GitHub is being shy and doesn't want to show itself. 
         You can see my articles <a href={url("github")}>here.</a>

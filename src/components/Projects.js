@@ -3,7 +3,7 @@ import { Switch, Route } from "react-router-dom"
 
 import Project from "./Project"
 import ProjectNavigation from "./ProjectNavigation";
-import projects from "../helpers/projects"
+import { projects } from "../helpers/projects"
 
 export default function Projects(props){
   const renderProjects = () => {

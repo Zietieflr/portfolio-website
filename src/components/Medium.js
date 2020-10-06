@@ -7,7 +7,7 @@ export default function Medium(){
   function initialScript(src) {
     return new Promise(function(resolve, reject) {
       const $script = document.createElement("script");
-      $script.id = "mediumScript";
+      $script.id = "medium-script";
       $script.src = src;
       $script.addEventListener("load", resolve);
       $script.addEventListener("error", reject)
@@ -18,7 +18,7 @@ export default function Medium(){
 
   function renderMedium() {
     const $renderMedium = document.createElement("script");
-    $renderMedium.id = "renderingScript";
+    $renderMedium.id = "rendering-script";
     $renderMedium.innerHTML = `MediumWidget.Init({
       renderTo: '#medium-widget',
       params: {"resource":"${url("medium")}",
@@ -39,8 +39,8 @@ export default function Medium(){
   useEffect(() => {    
     initialScript(url("mediumWidget")).then(renderMedium, renderError);
     return () => {
-      const $rendingScript = document.getElementById("renderingScript");
-      const $mediumScript = document.getElementById("mediumScript");
+      const $rendingScript = document.getElementById("rendering-script");
+      const $mediumScript = document.getElementById("medium-script");
       document.body.removeChild($rendingScript);
       document.body.removeChild($mediumScript);
     }

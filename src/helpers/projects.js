@@ -1,6 +1,6 @@
 const projectsObject = []
 
-export default function projects() {
+function projects() {
   return projectsObject
 }
 
@@ -51,3 +51,5 @@ projectsObject.push({
   descriptionShort: "abc",
   descriptionLong: "abc",
 })
+
+export { projects }

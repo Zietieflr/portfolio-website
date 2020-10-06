@@ -65,11 +65,27 @@ h3 > a, h3 > a:visited {
 }
 
 section.medium-widget {
-  margin-left: 1%;
+  margin-left: 1rem;
   margin-right: 0;
 }
 
 .medium-widget-article__row {
   box-shadow: 4px 4px 12px -5px hsl(0, 0%, 70%);
   border-radius: 5px;
+}
+
+div.contrib-footer, div.day-tooltip {
+  text-align: center;
+}
+
+text.wday, text.month {
+  font-size: .75rem;
+}
+
+div.contrib-legend {
+  display: none; 
+}
+
+#git-hub-calendar {
+  margin-left: 1rem;
 }

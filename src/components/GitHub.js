@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 
 import url from "../helpers/urls"
+import gitHubShowcases from "../helpers/gitHubShowcase"
 
 export default function GitHub(){
   const [gitHubScriptWorking, setGitHubScriptWorking] = useState(true);
@@ -52,12 +53,34 @@ export default function GitHub(){
       </p>
   }
 
+  function gitHubShowcase() {
+    return gitHubShowcases().map(showcase => {
+      return (
+        <li>
+          <h6>
+            <a href={showcase.link}>{showcase.name}</a>
+          </h6>
+          <p>{showcase.shortDescription}</p>
+        </li>
+      )
+    })
+  }
+
   return(
     <>
       <h3>
         <a href="https://github.com/Zietieflr">GitHub</a>
       </h3>
       {verifyGitHubWidget()}
+      <h4>Side Code</h4>
+      <h5>
+        This list has various repositories which I have worked with that don't 
+        constitute full projects, but may be interesting to browse through. These
+        were never intended to be published, GitHub is their only and intended home.  
+      </h5>
+      <ul className="project-list">
+        {gitHubShowcase()}
+      </ul>
     </>
   )
 }

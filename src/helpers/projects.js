@@ -1,10 +1,10 @@
-const projectsObject = []
+const projectsArray = [];
 
-function projects() {
-  return projectsObject
+export default function projects() {
+  return projectsArray;
 }
 
-projectsObject.push({
+projectsArray.push({
   key: "portfolio",
   name: "Portfolio Website (This site!)",
   links: {
@@ -14,9 +14,9 @@ projectsObject.push({
   },
   descriptionShort: "abc",
   descriptionLong: "abc",
-})
+});
 
-projectsObject.push({
+projectsArray.push({
   key: "o-tock",
   name: "O'Tock",
   links: {
@@ -26,9 +26,9 @@ projectsObject.push({
   },
   descriptionShort: "abc",
   descriptionLong: "abc",
-})
+});
 
-projectsObject.push({
+projectsArray.push({
   key: "bodle",
   name: "bodle",
   links: {
@@ -38,9 +38,9 @@ projectsObject.push({
   },
   descriptionShort: "abc",
   descriptionLong: "abc",
-})
+});
 
-projectsObject.push({
+projectsArray.push({
   key: "2eSheet",
   name: "Pathfinder 2e Character Sheet",
   links: {
@@ -50,6 +50,4 @@ projectsObject.push({
   },
   descriptionShort: "abc",
   descriptionLong: "abc",
-})
-
-export { projects }
+});

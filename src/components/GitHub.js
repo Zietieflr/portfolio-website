@@ -56,7 +56,7 @@ export default function GitHub(){
   function gitHubShowcase() {
     return gitHubShowcases().map(showcase => {
       return (
-        <li>
+        <li key={showcase.name} className="project-item">
           <h6>
             <a href={showcase.link}>{showcase.name}</a>
           </h6>

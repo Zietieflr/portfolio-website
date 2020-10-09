@@ -108,6 +108,10 @@ div.contrib-legend {
   padding: 1rem;
   box-shadow: 0px 0px 10px -2px hsl(0, 0%, 70%);
   border-radius: 6px;
+  /* Widget auto-loads a min-height of 175px, even when set to responsive.
+  I chose to override with a highly specific tag rather than adding more
+  on 'load' logic to React. */
+  min-height: fit-content !important;
 }
 
 .project-list {

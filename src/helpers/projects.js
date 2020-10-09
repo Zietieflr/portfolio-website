@@ -8,7 +8,7 @@ projectsArray.push({
   key: "portfolio",
   name: "Portfolio Website (This site!)",
   links: {
-    github: "https://github.com/Zietieflr/portfolio-website",
+    gitHub: "https://github.com/Zietieflr/portfolio-website",
     // video: "",
     // website: "",
   },
@@ -20,7 +20,7 @@ projectsArray.push({
   key: "o-tock",
   name: "O'Tock",
   links: {
-    github: "https://github.com/Zietieflr/project-mod5-frontend",
+    gitHub: "https://github.com/Zietieflr/project-mod5-frontend",
     video: "https://www.youtube.com/embed/g8NV0A0ktT0",
     website: "https://o-tock.web.app/",
   },
@@ -32,7 +32,7 @@ projectsArray.push({
   key: "bodle",
   name: "bodle",
   links: {
-    github: "https://github.com/Zietieflr/Project-Mod3-Frontend",
+    gitHub: "https://github.com/Zietieflr/Project-Mod3-Frontend",
     video: "https://youtu.be/RIta49j5Eus",
     // website: "abc",
   },
@@ -44,7 +44,7 @@ projectsArray.push({
   key: "2eSheet",
   name: "Pathfinder 2e Character Sheet",
   links: {
-    github: "https://github.com/Zietieflr/project-week-frontend-Mod4",
+    gitHub: "https://github.com/Zietieflr/project-week-frontend-Mod4",
     video: "https://youtu.be/wsU3MPdfwTo",
     // website: "abc",
   },

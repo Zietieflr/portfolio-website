@@ -1,4 +1,7 @@
 import React from "react";
+
+import ProjectLinks from "./ProjectLinks"
+
 import { useWindowDimensions } from "../hooks/useWindDimensions";
 
 export default function Project(props) {
@@ -30,11 +33,19 @@ export default function Project(props) {
       ></iframe>
       : null;
   }
+
+  function renderLinks() {
+    return Object.entries(links).map(link => {
+      return <ProjectLinks key={link[0]} link={link[1]} text={link[0]} />
+    })
+  }
+
   return (
     <>
       <h4>{name}</h4>
       <h5>{descriptionShort}</h5>
       {renderVideo()}
+      {renderLinks()}
       <p>{descriptionLong}</p>
     </>
   )

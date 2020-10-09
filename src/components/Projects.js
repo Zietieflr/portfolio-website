@@ -3,13 +3,15 @@ import { Route } from "react-router-dom"
 
 import Project from "./Project"
 import ProjectNavigation from "./ProjectNavigation";
-import projects from "../helpers/projects"
+import projects from "../helpers/projects";
 
 export default function Projects(props){
   const renderProjects = () => {
     return projects().map(project => {
       const key = project["key"]
-      return <ProjectNavigation key={key} project={project} />
+      return (
+          <ProjectNavigation key={key} project={project} />
+      )
     })
   }
 
@@ -22,8 +24,8 @@ export default function Projects(props){
       <h3>Projects</h3>
         <Route path="/projects" render={() => {
           return (
-            <nav className="projectNav">
-              <ul className="projectNav">
+            <nav className="project-nav">
+              <ul>
                 {renderProjects()}
               </ul>
             </nav>

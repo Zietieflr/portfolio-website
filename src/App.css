@@ -62,16 +62,19 @@ h6 {
   width: inherit;
 }
 
-.primaryNav > ul > li > a {
+.primaryNav > ul > li > a,
+.project-nav > ul > li > a {
   text-decoration: none;
   font-size: 1.25rem;
 }
 
-.primaryNav > ul > li > a:visited {
+.primaryNav > ul > li > a:visited,
+.project-nav > ul > li > a:visited {
   color: hsl(0, 0%, 20%);
 }
 
-.primaryNav > ul > li > .active {
+.primaryNav > ul > li > .active,
+.project-nav > ul > li > .active {
   font-weight: 700;
 }
 
@@ -106,7 +109,7 @@ div.contrib-legend {
   margin-left: 1rem;
   margin-bottom: 2rem;
   padding: 1rem;
-  box-shadow: 0px 0px 10px -2px hsl(0, 0%, 70%);
+  box-shadow: 0px 0px 10px -3px hsl(0, 0%, 70%);
   border-radius: 6px;
   /* Widget auto-loads a min-height of 175px, even when set to responsive.
   I chose to override with a highly specific tag rather than adding more
@@ -120,6 +123,28 @@ div.contrib-legend {
 
 .project-item {
   padding: .75rem;
-  box-shadow: 0px 0px 10px -2px hsl(0, 0%, 70%);
+  box-shadow: 0px 0px 10px -6px hsl(0, 0%, 70%);
   border-radius: 6px;
+}
+
+.project-nav > ul {
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-around;
+  font-size: 1rem;
+  padding-bottom: .5rem;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid hsl(0, 0%, 20%);
+}
+
+.more-info {
+  border: none;
+  background-color: hsl(0, 0%, 98%);
+  font-size: 1.5rem;
+  margin-left: .5rem;
+  transform: translateY(2px);
+}
+
+.dividers {
+  transform: scaleY(2rem);
 }

@@ -46,7 +46,7 @@ export default function Project(props) {
       <h5>{descriptionShort}</h5>
       {renderVideo()}
       {renderLinks()}
-      <p>{descriptionLong}</p>
+      <p className="project-item">{descriptionLong}</p>
     </>
   )
 }

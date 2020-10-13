@@ -9,10 +9,12 @@ export default function ProjectLinks(props) {
     return text.charAt(0).toUpperCase() + text.slice(1)
   }
   return (
-    <h6>
+    <h6 className="project-link">
+      <a href={link}>
+        <FontAwesomeIcon icon={faExternalLinkAlt} />
+      </a>
       <a href={link}>
         {capitalizeText(text)}
-        <FontAwesomeIcon icon={faExternalLinkAlt} />
       </a>
     </h6>
   )

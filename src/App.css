@@ -45,6 +45,7 @@ h5 {
 
 h6 {
   font-size: 1.25rem;
+  font-weight: 500;
   margin-bottom: .5rem;
 }
 
@@ -83,6 +84,17 @@ section {
   margin-right: 10%;
 }
 
+p {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+iframe {
+  margin-bottom: 1rem;
+  border-radius: 6px;
+  box-shadow: 4px 4px 12px -5px hsl(0, 0%, 70%);
+}
+
 section.medium-widget {
   margin-left: 1rem;
   margin-right: 0;
@@ -117,10 +129,6 @@ div.contrib-legend {
   min-height: fit-content !important;
 }
 
-.project-list {
-  margin-left: 2rem;
-}
-
 .project-item {
   padding: .75rem;
   box-shadow: 0px 0px 10px -6px hsl(0, 0%, 70%);
@@ -145,6 +153,6 @@ div.contrib-legend {
   transform: translateY(2px);
 }
 
-.dividers {
-  transform: scaleY(2rem);
+.project-link > a {
+  margin-right: 1rem;
 }

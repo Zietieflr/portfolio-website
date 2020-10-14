@@ -1,17 +1,16 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
-export default function ProjectLinks(props) {
-  const { link, text } = props;
+export default function ExternalLinks(props) {
+  const { link, text, icon } = props;
 
   function capitalizeText(text) {
     return text.charAt(0).toUpperCase() + text.slice(1)
   }
   return (
-    <h6 className="project-link">
+    <h6 className="external-link">
       <a href={link}>
-        <FontAwesomeIcon icon={faExternalLinkAlt} />
+        <FontAwesomeIcon icon={icon} />
       </a>
       <a href={link}>
         {capitalizeText(text)}

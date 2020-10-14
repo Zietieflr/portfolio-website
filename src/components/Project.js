@@ -1,6 +1,7 @@
 import React from "react";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
-import ProjectLinks from "./ProjectLinks"
+import ExternalLinks from "./ExternalLinks"
 
 import { useWindowDimensions } from "../hooks/useWindDimensions";
 
@@ -36,7 +37,7 @@ export default function Project(props) {
 
   function renderLinks() {
     return Object.entries(links).map(link => {
-      return <ProjectLinks key={link[0]} link={link[1]} text={link[0]} />
+      return <ExternalLinks key={link[0]} link={link[1]} text={link[0]} icon={faExternalLinkAlt} />
     })
   }
 

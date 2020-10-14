@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 
 import url from "../helpers/urls"
 import gitHubShowcases from "../helpers/gitHubShowcase"
+import ExternalLinks from "./ExternalLinks";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 export default function GitHub(){
   const [gitHubScriptWorking, setGitHubScriptWorking] = useState(true);
@@ -55,12 +57,11 @@ export default function GitHub(){
 
   function gitHubShowcase() {
     return gitHubShowcases().map(showcase => {
+      const {name, link, shortDescription} = showcase;
       return (
-        <li key={showcase.name} className="project-item">
-          <h6>
-            <a href={showcase.link}>{showcase.name}</a>
-          </h6>
-          <p>{showcase.shortDescription}</p>
+        <li key={name} className="project-item">
+          <ExternalLinks link={link} text={name} icon={faGithub} />
+          <p>{shortDescription}</p>
         </li>
       )
     })

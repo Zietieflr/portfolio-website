@@ -1,9 +1,9 @@
 import React from "react";
 
-import RotatingImage from "./RotatingImages";
+import ImageCarousel from "./ImageCarousel";
 
 export default function LifeSection() {
   return (
-    <RotatingImage />
+    <ImageCarousel />
   )
 }

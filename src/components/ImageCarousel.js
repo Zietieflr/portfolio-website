@@ -19,19 +19,20 @@ export default function ImageCarousel() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    lazyLoad: 'ondemand',
   };
 
   return (
     <Slider {...settings}>
-      <img src={curse1} />
-      <img src={curse2} />
-      <img src={curse3} />
-      <img src={gs1} />
-      <img src={gs2} />
-      <img src={gs3} />
-      <img src={lab1} />
-      <img src={lab2} />
-      <img src={lab3} />
+      <img src={gs1} className="carousel-image" />
+      <img src={gs3} className="carousel-image" />
+      <img src={gs2} className="carousel-image" />
+      <img src={curse1} className="carousel-image" />
+      <img src={curse3} className="carousel-image" />
+      <img src={curse2} className="carousel-image" />
+      <img src={lab1} className="carousel-image" />
+      <img src={lab2} className="carousel-image" />
+      <img src={lab3} className="carousel-image" />
     </Slider>
   )
 }

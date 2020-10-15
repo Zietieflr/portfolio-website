@@ -9,6 +9,7 @@ import Medium from "./components/Medium";
 import Projects from "./components/Projects";
 
 import "./App.css";
+import dragon from "./images/sean-thomas-unsplash.png";
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
           </Switch>
         </section>
       </Router>
+      <img id="decor-dragon" aria-hidden="true" alt="" src={dragon} />
     </main>
   );
 }

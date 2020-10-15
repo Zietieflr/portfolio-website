@@ -5,18 +5,6 @@ export default function projects() {
 }
 
 projectsArray.push({
-  key: "portfolio",
-  name: "Portfolio Website (This site!)",
-  links: {
-    gitHub: "https://github.com/Zietieflr/portfolio-website",
-    // video: "",
-    // website: "",
-  },
-  descriptionShort: "abc",
-  descriptionLong: "abc",
-});
-
-projectsArray.push({
   key: "o-tock",
   name: "O'Tock",
   links: {
@@ -89,4 +77,20 @@ projectsArray.push({
     + "nested attributes back and forth reducing the number of requests I had to make while "
     + "working on a character sheet. This app was the first step, now that I have a better "
     + "sense of what I am trying to do I will be building a more robust version."
+});
+
+projectsArray.push({
+  key: "portfolio",
+  name: "Portfolio Website",
+  links: {
+    gitHub: "https://github.com/Zietieflr/portfolio-website",
+    // video: "",
+    // website: "",
+  },
+  descriptionShort: "This site!",
+  descriptionLong: "I built this site to showcase a bit about myself and continue working "
+    + "on my skills as a developer. I used React and React Router to build all of the basic "
+    + "functionality. I included widgets for both the GitHub Calendar and the Medium Blog "
+    + "displays. For the image carousels I included React Slick, both for speed and the "
+    + "accessibility features it included out of the box."
 });

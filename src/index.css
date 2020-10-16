@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans:wght@300;400;500;700&display=swap');
 
 body {
+  background-color: hsl(0, 0%, 96%);
+  min-height: 100vh;
   margin: 0;
   font-family: 'Alegreya Sans', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  color: hsl(0, 0%, 20%);
 }
 
 code {

@@ -41,8 +41,8 @@ export default function Medium(){
     return () => {
       const $rendingScript = document.getElementById("rendering-script");
       const $mediumScript = document.getElementById("medium-script");
-      document.body.removeChild($rendingScript);
-      document.body.removeChild($mediumScript);
+      if ($rendingScript) {document.body.removeChild($rendingScript)};
+      if ($mediumScript) {document.body.removeChild($mediumScript)};
     }
   }, []);
 

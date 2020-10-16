@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:wght@400;500;700&display=swap');
 /* font-family: 'Alegreya Sans SC', sans-serif; */
 
-body {
-  background-color: hsl(0, 0%, 96%);
-  color: hsl(0, 0%, 20%);
+#root {
+  min-height: inherit;
 }
 
 main {
   /* padding-bottom: 2rem; */
   position: relative;
-  height: 100vh;
+  min-height: inherit;
+  padding-bottom: 2rem;
 }
 
 h1 {
@@ -58,8 +58,9 @@ h6 {
 
 #decor-dragon {
   z-index: -1;
-  position: -webkit-sticky;
-  position: sticky;
+  /* position: -webkit-sticky;
+  position: sticky; */
+  position: fixed;
   right: 0;
   bottom: 0;
   width: 20%;

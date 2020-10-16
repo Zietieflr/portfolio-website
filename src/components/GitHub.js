@@ -41,8 +41,8 @@ export default function GitHub(){
     return () => {
       const $rendingScript = document.getElementById("rendering-script");
       const $gitHubScript = document.getElementById("git-hub-script");
-      document.body.removeChild($rendingScript);
-      document.body.removeChild($gitHubScript);
+      if ($rendingScript) {document.body.removeChild($rendingScript)};
+      if ($gitHubScript) {document.body.removeChild($gitHubScript)};
     }
   }, []);
 

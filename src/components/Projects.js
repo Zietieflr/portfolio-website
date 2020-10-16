@@ -1,23 +1,23 @@
 import React from "react";
-import { Route } from "react-router-dom"
+import { Route } from "react-router-dom";
 
-import Project from "./Project"
+import Project from "./Project";
 import ProjectNavigation from "./ProjectNavigation";
 import projects from "../helpers/projects";
 
 export default function Projects(props){
   const renderProjects = () => {
     return projects().map(project => {
-      const key = project["key"]
+      const key = project["key"];
       return (
           <ProjectNavigation key={key} project={project} />
-      )
-    })
+      );
+    });
   }
 
   const findProject = () => {
-    const key = props.routerProps.location.pathname.slice(10)
-    return projects().find(project => project["key"] === key)
+    const key = props.routerProps.location.pathname.slice(10);
+    return projects().find(project => project["key"] === key);
   }
   return(
     <>
@@ -31,9 +31,9 @@ export default function Projects(props){
             </nav>
           )
         }} />
-        <Route strict path="/projects/" render={(routerProps) => {
+        <Route strict path="/projects/" render={() => {
           return <Project project={findProject()} />
         }} />
     </>
-  )
+  );
 }

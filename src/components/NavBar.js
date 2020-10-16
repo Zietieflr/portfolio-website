@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 
 export default function NavBar() {
   return(
-    <nav className="primaryNav">
+    <nav className="primary-nav">
       <ul>
         <li>
           <NavLink to="/about">About</NavLink>

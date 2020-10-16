@@ -8,8 +8,8 @@ import GitHub from "./components/GitHub";
 import Medium from "./components/Medium";
 import Projects from "./components/Projects";
 
-import "./App.css";
 import dragon from "./images/sean-thomas-unsplash.png";
+import "./App.css";
 
 function App() {
   return (
@@ -19,16 +19,16 @@ function App() {
         <NavBar />
         <section>
           <Switch>
-            <Route path="/about" render={(routerProps) => {
+            <Route path="/about" render={() => {
               return <About /> }}
             />
-            <Route path="/contact" render={(routerProps) => {
+            <Route path="/contact" render={() => {
               return <ContactMe /> }}
             />
-            <Route path="/github" render={(routerProps) => {
+            <Route path="/github" render={() => {
               return <GitHub /> }}
             />
-            <Route path="/medium" render={(routerProps) => {
+            <Route path="/medium" render={() => {
               return <Medium /> }}
             />
             <Route path="/projects" render={(routerProps) => {

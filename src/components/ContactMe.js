@@ -1,8 +1,9 @@
 import React from "react";
 import { faEnvelope, faPhone } from "@fortawesome/free-solid-svg-icons";
+import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
 
 import ExternalLinks from "./ExternalLinks";
-import { faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import ContactForm from "./ContactForm";
 
 export default function ContactMe(){
   function mailTo() {
@@ -42,6 +43,7 @@ export default function ContactMe(){
   return(
     <>
       <h3>Contact Me</h3>
+      <ContactForm />
       <ExternalLinks link={mailTo()} text={emailText()} icon={faEnvelope} />
       <ExternalLinks link={phone()} text={phoneText()} icon={faPhone} />
       <ExternalLinks link={linkedIn()} text={linkedInText()} icon={faLinkedin} />

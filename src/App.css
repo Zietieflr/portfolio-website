@@ -56,6 +56,10 @@ h6 {
   margin-bottom: .5rem;
 }
 
+.hidden {
+  display: none;
+}
+
 #decor-dragon {
   z-index: -1;
   position: fixed;

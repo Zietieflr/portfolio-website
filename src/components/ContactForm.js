@@ -33,6 +33,7 @@ export default function ContactForm() {
       <label htmlFor="sender-email" className="hidden">Your Name:</label>
         <input
           id="sender-email"
+          type="email"
           onChange={enterEmail}
           value={senderEmail}
           placeholder="Your email here, please!"

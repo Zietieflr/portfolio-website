@@ -6,10 +6,9 @@
 }
 
 main {
-  /* padding-bottom: 2rem; */
-  position: relative;
-  min-height: inherit;
   padding-bottom: 2rem;
+  position: relative;
+  min-height: calc(100% - 2rem);
 }
 
 h1 {
@@ -92,6 +91,10 @@ h6 {
   font-weight: 700;
 }
 
+.project-nav {
+  min-width: 80vw;
+}
+
 section {
   margin-left: 10%;
   margin-right: 10%;
@@ -144,6 +147,7 @@ input[type="submit"] {
   margin-left: 50%;
   transform: translateX(-50%);
   font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 500;
 }
 
 input[type="submit"]:hover {

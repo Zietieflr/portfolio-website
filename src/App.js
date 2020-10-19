@@ -7,12 +7,14 @@ import ContactMe from "./components/ContactMe";
 import GitHub from "./components/GitHub";
 import Medium from "./components/Medium";
 import Projects from "./components/Projects";
+import Footer from "./components/Footer"
 
 import dragon from "./images/sean-thomas-unsplash.png";
 import "./App.css";
 
 function App() {
   return (
+    <>
     <main className="App">
       <Router>
         <h1><Link to="/">Logan McGuire</Link></h1>
@@ -39,6 +41,8 @@ function App() {
       </Router>
       <img id="decor-dragon" aria-hidden="true" alt="" src={dragon} />
     </main>
+    <Footer />
+    </>
   );
 }
 

@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from "react";
-
-import url from "../helpers/urls"
-import gitHubShowcases from "../helpers/gitHubShowcase"
-import ExternalLinks from "./ExternalLinks";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+
+import Title from "./Title";
+import ExternalLinks from "./ExternalLinks";
+
+import gitHubShowcases from "../helpers/gitHubShowcase";
+import url from "../helpers/urls";
 
 export default function GitHub(){
   const [gitHubScriptWorking, setGitHubScriptWorking] = useState(true);
@@ -69,9 +71,7 @@ export default function GitHub(){
 
   return(
     <>
-      <h3>
-        <a href="https://github.com/Zietieflr">GitHub</a>
-      </h3>
+      <Title text={"GitHub"} link={url("gitHub")} />
       {verifyGitHubWidget()}
       <h4>Side Code</h4>
       <h5>

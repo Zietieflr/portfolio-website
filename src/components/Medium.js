@@ -1,4 +1,7 @@
 import React, { useEffect, useState } from "react";
+
+import Title from "./Title";
+
 import url from "../helpers/urls";
 
 export default function Medium(){
@@ -57,9 +60,7 @@ export default function Medium(){
 
   return(
     <>
-      <h3>
-        <a href={url("medium")}>Medium</a>
-      </h3>
+      <Title text={"Medium"} link={url("medium")} />
       {verifyArticleWidget()}
     </>
   )

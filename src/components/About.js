@@ -1,11 +1,12 @@
 import React from "react";
 
+import Title from "./Title";
 import LifeSection from "./LifeSections"
 
 export default function About(){
   return(
     <>
-      <h3>About Me</h3>
+      <Title text={"About Me"} />
       <LifeSection />
     </>
   )

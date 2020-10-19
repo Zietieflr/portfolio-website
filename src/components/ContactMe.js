@@ -1,11 +1,12 @@
 import React from "react";
 
+import Title from "./Title";
 import ContactForm from "./ContactForm";
 
 export default function ContactMe(){
   return(
     <>
-      <h3>Contact Me</h3>
+      <Title text={"Contact Me"} />
       <ContactForm />
     </>
   )

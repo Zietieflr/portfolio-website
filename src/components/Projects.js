@@ -1,8 +1,10 @@
 import React from "react";
 import { Route } from "react-router-dom";
 
+import Title from "./Title";
 import Project from "./Project";
 import ProjectNavigation from "./ProjectNavigation";
+
 import projects from "../helpers/projects";
 
 export default function Projects(props){
@@ -21,7 +23,7 @@ export default function Projects(props){
   }
   return(
     <>
-      <h3>Projects</h3>
+      <Title text={"Projects"} />
         <Route path="/projects" render={() => {
           return (
             <nav className="project-nav">

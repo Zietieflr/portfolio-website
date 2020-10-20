@@ -8,9 +8,9 @@ export default function NavBar() {
         <li>
           <NavLink to="/about">About</NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to="/contact">Contact Me</NavLink>
-        </li>
+        </li> */}
         <li>
           <NavLink to="/github">GitHub</NavLink>
         </li>

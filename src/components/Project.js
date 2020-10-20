@@ -37,7 +37,12 @@ export default function Project(props) {
 
   function renderLinks() {
     return Object.entries(links).map(link => {
-      return <ExternalLinks key={link[0]} link={link[1]} text={link[0]} icon={faExternalLinkAlt} />
+      return <ExternalLinks
+        key={link[0]}
+        link={link[1]}
+        text={link[0]}
+        icon={faExternalLinkAlt}
+      />
     })
   }
 

@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 import NavBar from "./components/NavBar";
 import About from "./components/About";
-import ContactMe from "./components/ContactMe";
+// import ContactMe from "./components/ContactMe";
 import GitHub from "./components/GitHub";
 import Medium from "./components/Medium";
 import Projects from "./components/Projects";
@@ -24,9 +24,9 @@ function App() {
             <Route path="/about" render={() => {
               return <About /> }}
             />
-            <Route path="/contact" render={() => {
+            {/* <Route path="/contact" render={() => {
               return <ContactMe /> }}
-            />
+            /> */}
             <Route path="/github" render={() => {
               return <GitHub /> }}
             />

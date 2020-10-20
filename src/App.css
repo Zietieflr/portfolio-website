@@ -158,6 +158,21 @@ input[type="submit"]:active {
   box-shadow: -4px -4px 12px -5px hsl(0, 0%, 70%);
 }
 
+footer {
+  display: inline-flex;
+  background-color: hsl(0, 0%, 96%);
+  justify-content: space-around;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  max-width: calc(100% - 150px);
+  border-radius: 0 6px 0 0;
+  height: 1.5rem;
+  font-size: 1rem;
+  padding-top: .25rem;
+}
+
 section.medium-widget {
   margin-left: 1rem;
   margin-right: 0;

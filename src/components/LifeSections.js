@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faCaretLeft, faCaretDown } from "@fortawesome/free-solid-svg-icons";
+import { faCaretRight, faCaretDown } from "@fortawesome/free-solid-svg-icons";
 
 import ImageCarousel from "./ImageCarousel";
 
@@ -14,7 +14,7 @@ export default function LifeSection(props) {
   }
 
   function caretDirection() {
-    return showDescription ? faCaretDown : faCaretLeft;
+    return showDescription ? faCaretDown : faCaretRight;
   }
 
   function toggleDescription() {
@@ -25,8 +25,8 @@ export default function LifeSection(props) {
     <>
       <h4>
         <button onClick={toggleDescription}>
-          {titleText + " "}
           <FontAwesomeIcon icon={caretDirection()}/>
+          {" " + titleText}
         </button>
       </h4>
       {renderDescription()}

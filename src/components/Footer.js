@@ -15,9 +15,9 @@ export default function Footer() {
   return (
     <footer>
       <ExternalLinks link={mailTo()} text="" icon={faEnvelope} />
-      <ExternalLinks link={url("medium")} text="" icon={faMedium} />
-      <ExternalLinks link={url("gitHub")} text="" icon={faGithub} />
       <ExternalLinks link={url("linkedIn")} text="" icon={faLinkedin} />
+      <ExternalLinks link={url("gitHub")} text="" icon={faGithub} />
+      <ExternalLinks link={url("medium")} text="" icon={faMedium} />
     </footer>
   )
 }

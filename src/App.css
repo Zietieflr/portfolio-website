@@ -243,6 +243,11 @@ div.contrib-legend {
   margin-right: 1rem;
 }
 
+.slick-slider.slick-initialized {
+  padding-bottom: 2rem;
+  margin-bottom: .5rem;
+}
+
 .slick-prev:before, .slick-next:before {
   color: hsl(0, 0%, 20%);
 }
@@ -253,6 +258,10 @@ div.contrib-legend {
   margin-left: 2.5%;
   border-radius: 6px;
   box-shadow: 0px 0px 10px -6px hsl(0, 0%, 20%);
+}
+
+.slick-dots {
+  bottom: 0;
 }
 
 #decor-dragon {

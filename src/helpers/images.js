@@ -13,6 +13,11 @@ import rescue1 from "../images/puzzleEffect/Rescue1.jpg";
 import rescue2 from "../images/puzzleEffect/Rescue2.jpg";
 import rescue3 from "../images/puzzleEffect/Rescue3.jpg";
 
+import dragon1 from "../images/dragons/dragon1.jpg";
+import dragon2 from "../images/dragons/dragon2.jpg";
+import dragon3 from "../images/dragons/dragon3.jpg";
+import dragon4 from "../images/dragons/dragon4.jpg";
+
 export function formatCarouselImages(imageGroups) {
   const images = [];
   imageGroups.forEach(imageGroup => {
@@ -24,7 +29,7 @@ export function formatCarouselImages(imageGroups) {
   return images;
 }
 
-const puzzleEffectList = [
+export const puzzleEffectList = [
   {
     srcs: [gs1, gs3, gs2],
     alt: "Image from Puzzle Effect's Grim Stacks. "
@@ -46,6 +51,13 @@ const puzzleEffectList = [
       + "An alchemy lab escape room."
   },
 ];
+
+export const dragonList = [
+  {
+    srcs: [dragon1, dragon2, dragon3, dragon4],
+    alt: "A dragon, or dragons from my collection."
+  },
+]
 
 export function puzzleEffectImages(){
   return puzzleEffectList;

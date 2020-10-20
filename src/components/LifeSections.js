@@ -2,8 +2,12 @@ import React from "react";
 
 import ImageCarousel from "./ImageCarousel";
 
-export default function LifeSection() {
+export default function LifeSection(props) {
+  const {titleText, images} = props;
   return (
-    <ImageCarousel />
+    <>
+      <h4>{titleText}</h4>
+      <ImageCarousel images={images} />
+    </>
   )
 }

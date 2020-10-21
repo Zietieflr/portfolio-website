@@ -75,19 +75,31 @@ h6 {
   width: 100%;
 }
 
-.primary-nav > ul {
-  font-family: 'Alegreya Sans SC', sans-serif;
+.primary-nav > ul, 
+.project-nav > ul {
   display: inline-flex;
   justify-content: space-around;
   width: inherit;
+}
+
+.primary-nav > ul {
+  font-family: 'Alegreya Sans SC', sans-serif;
+}
+
+.project-nav > ul {
+  flex-wrap: wrap;
 }
 
 .primary-nav > ul > li > a,
 .project-nav > ul > li > a {
   text-decoration: none;
   font-size: 1.25rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.project-nav > ul > li > a {
+  line-height: 1.5rem;
 }
 
 .primary-nav > ul > li > a:visited,
@@ -98,10 +110,6 @@ h6 {
 .primary-nav > ul > li > .active,
 .project-nav > ul > li > .active {
   font-weight: 700;
-}
-
-.project-nav {
-  min-width: 80vw;
 }
 
 section {

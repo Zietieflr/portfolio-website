@@ -3,7 +3,7 @@ import React from "react";
 import { useWindowDimensions } from "../hooks/useWindDimensions";
 
 export default function EmbeddedVideo(props) {
-  const { name, link, maxWidth } = props;
+  const { name, link, maxWidth, htmlClass } = props;
 
   let windowDimensions = useWindowDimensions();
   let iFrameWidth = iFrameSize();
@@ -17,7 +17,7 @@ export default function EmbeddedVideo(props) {
   return (
   <iframe
         title={`${name} Video`}
-        className="project-video"
+        className={htmlClass}
         width={iFrameWidth} 
         height={iFrameWidth*.5625} 
         src={link} 

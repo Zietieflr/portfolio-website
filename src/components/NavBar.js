@@ -18,7 +18,7 @@ export default function NavBar() {
           <NavLink to="/medium">Medium</NavLink>
         </li>
         <li>
-          <NavLink to="/projects">Projects</NavLink>
+          <NavLink to="/projects/o-tock">Projects</NavLink>
         </li>
       </ul>
     </nav>

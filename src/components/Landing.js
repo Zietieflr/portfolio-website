@@ -9,6 +9,7 @@ export default function Landing() {
       name="Portfolio introduction video"
       link={url("introVideo")}
       maxWidth={900}
+      htmlClass={"intro-video"}
     />
   )
 }

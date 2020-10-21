@@ -51,9 +51,11 @@ h4 > button {
 }
 
 h5 {
+  background-color: hsl(0, 0%, 96%);
   font-size: 1.5rem;
   margin-left: 1rem;
   margin-bottom: 1rem;
+  border-radius: 6px;
 }
 
 h6 {
@@ -116,24 +118,34 @@ h6 {
 section {
   margin-left: 10%;
   margin-right: 10%;
-  background-color: hsl(0, 0%, 96%);
-  padding: 1rem;
-  border-radius: 6px;
+  /* background-color: hsl(0, 0%, 96%); */
+  padding-top: 1rem;
+  padding-bottom: 2rem;
   height: fit-content;
-  width: max-content;
-  max-width: 80%;
+  /* width: max-content; */
+  /* max-width: 80%; */
+  width: 80%;
+}
+
+ul {
+  background-color: hsl(0, 0%, 96%);
+  border-radius: 6px;
 }
 
 p {
+  background-color: hsl(0, 0%, 96%);
   font-size: 1.25rem;
   line-height: 1.75rem;
   margin-bottom: .5rem;
+  padding: 1rem;
+  border-radius: 6px;
 }
 
 iframe {
+  display: block;
   margin-bottom: 1rem;
   border-radius: 6px;
-  box-shadow: 4px 4px 12px -5px hsl(0, 0%, 70%);
+  box-shadow: 4px 4px 20px -10px hsl(0, 0%, 20%);
 }
 
 form {
@@ -184,12 +196,14 @@ footer {
   position: fixed;
   bottom: 0;
   left: 0;
-  width: 80%;
-  max-width: calc(100% - 150px);
-  border-radius: 0 6px 0 0;
+  width: 100%;
   height: 1.5rem;
   font-size: 1rem;
   padding-top: .25rem;
+}
+
+.intro-video {
+  margin: 0 auto;
 }
 
 section.medium-widget {
@@ -274,13 +288,20 @@ div.contrib-legend {
 
 .slick-dots {
   bottom: 0;
+  background-color: hsla(0, 0%, 0%, 0);
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.slick-dots > li {
+  width: 5%;
 }
 
 #decor-dragon {
   z-index: -1;
   position: fixed;
   right: 0;
-  bottom: 0;
+  bottom: 1.5rem;
   width: 20%;
   min-width: 150px;
   height: auto;

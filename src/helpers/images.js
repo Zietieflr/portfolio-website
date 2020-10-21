@@ -1,5 +1,11 @@
 import React from "react";
 
+import boardgame from "../images/hobbies/boardgame.jpg"
+import bread1 from "../images/hobbies/bread1.jpg"
+import bread2 from "../images/hobbies/bread2.jpg"
+import pathfinder from "../images/hobbies/pathfinder.jpg"
+import ttrpg from "../images/hobbies/ttrpg.jpg"
+
 import curse1 from "../images/puzzleEffect/Curse1.jpg";
 import curse2 from "../images/puzzleEffect/Curse2.jpg";
 import curse3 from "../images/puzzleEffect/Curse3.jpg";
@@ -59,6 +65,9 @@ export const dragonList = [
   },
 ]
 
-export function puzzleEffectImages(){
-  return puzzleEffectList;
-}
+export const hobbiesList = [
+  {
+    srcs: [pathfinder, ttrpg, bread1, bread2, boardgame],
+    alt: "Image of my hobbies."
+  },
+]

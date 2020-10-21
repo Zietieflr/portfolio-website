@@ -3,7 +3,7 @@ import React from "react";
 import Title from "./Title";
 import LifeSection from "./LifeSections"
 
-import { puzzleEffectList, dragonList } from "../helpers/images"
+import { hobbiesList, puzzleEffectList, dragonList } from "../helpers/images"
 import descriptions from "../helpers/lifeSectionDescriptions"
 
 export default function About(){
@@ -12,7 +12,7 @@ export default function About(){
       <Title text={"About Me"} />
       <LifeSection
         titleText={"Hobbies"}
-        images={puzzleEffectList}
+        images={hobbiesList}
         description={descriptions("hobbies")}
       />
       <LifeSection

@@ -2,36 +2,14 @@ import React from "react";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 
 import ExternalLinks from "./ExternalLinks"
-
-import { useWindowDimensions } from "../hooks/useWindDimensions";
+import EmbeddedVideo from "./EmbeddedVideo";
 
 export default function Project(props) {
   const { name, links, descriptionShort, descriptionLong } = props.project;
 
-  let windowDimensions = useWindowDimensions();
-  let iFrameWidth = iFrameSize();
-
-  function iFrameSize() {
-    return (windowDimensions.width*.8) > 560 ? 560 : windowDimensions.width*.8
-  }
-
   function renderVideo() {
-    return links.video
-      ? <iframe
-        title={`${name} Video`}
-        className="project-video"
-        width={iFrameWidth} 
-        height={iFrameWidth*.5625} 
-        src={links.video} 
-        frameBorder="0" 
-        allow="accelerometer; 
-          autoplay; 
-          clipboard-write; 
-          encrypted-media; 
-          gyroscope; 
-          picture-in-picture" 
-        allowFullScreen
-      ></iframe>
+    return links.video 
+      ? <EmbeddedVideo name={name} link={links.video} />
       : null;
   }
 

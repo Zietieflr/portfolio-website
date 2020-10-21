@@ -13,7 +13,7 @@ export default function ImageCarousel(props) {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    lazyLoad: 'ondemand',
+    lazyLoad: 'progressive',
   };
 
   return (

@@ -3,13 +3,15 @@ import React from "react";
 import { useWindowDimensions } from "../hooks/useWindDimensions";
 
 export default function EmbeddedVideo(props) {
-  const { name, link } = props;
+  const { name, link, maxWidth } = props;
 
   let windowDimensions = useWindowDimensions();
   let iFrameWidth = iFrameSize();
 
   function iFrameSize() {
-    return (windowDimensions.width*.8) > 560 ? 560 : windowDimensions.width*.8
+    return (windowDimensions.width*.8) > maxWidth
+      ? maxWidth
+      : windowDimensions.width*.8;
   }
 
   return (

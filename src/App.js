@@ -2,6 +2,7 @@ import React from "react";
 import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 
 import NavBar from "./components/NavBar";
+import Landing from "./components/Landing";
 import About from "./components/About";
 // import ContactMe from "./components/ContactMe";
 import GitHub from "./components/GitHub";
@@ -21,6 +22,9 @@ function App() {
         <NavBar />
         <section>
           <Switch>
+            <Route exact path="/" render={() => {
+              return <Landing /> }}
+            />
             <Route path="/about" render={() => {
               return <About /> }}
             />

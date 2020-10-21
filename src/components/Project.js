@@ -9,7 +9,7 @@ export default function Project(props) {
 
   function renderVideo() {
     return links.video 
-      ? <EmbeddedVideo name={name} link={links.video} />
+      ? <EmbeddedVideo name={name} link={links.video} maxWidth={560} />
       : null;
   }
 

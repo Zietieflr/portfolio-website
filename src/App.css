@@ -87,6 +87,7 @@ h6 {
 }
 
 .project-nav > ul {
+  min-width: 80vw;
   flex-wrap: wrap;
 }
 

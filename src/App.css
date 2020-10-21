@@ -212,8 +212,10 @@ section.medium-widget {
 }
 
 .medium-widget-article__row {
+  background-color: hsl(0, 0%, 96%);
   box-shadow: 4px 4px 12px -5px hsl(0, 0%, 70%);
   border-radius: 5px;
+  margin-bottom: .5rem;
 }
 
 div.contrib-footer, div.day-tooltip {

@@ -77,7 +77,7 @@ export default function GitHub(){
       <h5>
         This list has various repositories which I have worked with that don't 
         constitute full projects, but may be interesting to browse through. These
-        were never intended to be published, GitHub is their only and intended home.  
+        were never intended to be published, GitHub is their one and only home.  
       </h5>
       <ul className="project-list">
         {gitHubShowcase()}

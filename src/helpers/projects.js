@@ -22,10 +22,10 @@ projectsArray.push({
     + "permission. From there I used Vue to construct the components with connected logic "
     + "and integrated SweetAlerts for the modal windows and Chart.js for a visual timer. "
     + "Most of the front end integrations were possible due to Vue wrappers for the "
-    + "different libraries. This includes the icons through FontAwesome."
-    + "I knew I wanted schedules to persist, so at that point I incorporated Ruby on Rails "
+    + "different libraries, including the FontAwesome icons. "
+    + "I knew I wanted schedules to persist, so I incorporated Ruby on Rails "
     + "with Bcrypt and JWT to enable full user authentication and persistent schedules. " 
-    + "I stored the user hash in local storage to allow for persistent login."
+    + "I stored the user hash in local storage to allow for persistent login. "
     + "This project was completely styled with CSS. To interact with or see the code which "
     + "brought this project to life, please see the links provided above."
 });
@@ -36,7 +36,6 @@ projectsArray.push({
   links: {
     gitHub: "https://github.com/Zietieflr/Project-Mod3-Frontend",
     video: "https://www.youtube.com/embed/RIta49j5Eus",
-    // website: "abc",
   },
   descriptionShort: "Use video to draw.",
   descriptionLong: "This project was the culmination of a week long foray into machine learning. "
@@ -49,10 +48,10 @@ projectsArray.push({
     + "At this point I had the video loaded into Pose.net and was able to track where the wrist "
     + "was on the canvas. I stored each point/coordinate into an array and then used P5 to render "
     + "those points into a line. From there I implemented CSS styling for visual appeal, generated "
-    + "a random prompt from 'Quick, Draw!', and set a time limit.\n"
+    + "a random prompt from 'Quick, Draw!', and set a time limit. "
     + "In the future I would like to revisit this project to train the model to guess what each "
-    + "doodle was at time. I also have several ideas about implementing the ability to lift the "
-    + "'pencil' to help make the drawing a tad easier."
+    + "doodle was based off of its training. I also have several ideas about implementing the ability "
+    + "to lift the 'pencil' to help make the drawing a tad easier."
 });
 
 projectsArray.push({
@@ -61,11 +60,10 @@ projectsArray.push({
   links: {
     gitHub: "https://github.com/Zietieflr/project-week-frontend-Mod4",
     video: "https://www.youtube.com/embed/wsU3MPdfwTo",
-    // website: "abc",
   },
   descriptionShort: "A large form.",
   descriptionLong: "For the last five years I have done a deep dive into the world of "
-    + "collaborative storytelling. While there are as many systems for exploring the "
+    + "collaborative storytelling. There are as many systems for exploring the "
     + "genre as there are coding languages and frameworks, the most recognized being "
     + "Dungeons and Dragons. This app records some of the stats for a Pathfinder "
     + "Second Edition character sheet. Essentially this app boils down to being a "
@@ -84,8 +82,6 @@ projectsArray.push({
   name: "Portfolio Website",
   links: {
     gitHub: "https://github.com/Zietieflr/portfolio-website",
-    // video: "",
-    // website: "",
   },
   descriptionShort: "This site!",
   descriptionLong: "I built this site to showcase a bit about myself and continue working "

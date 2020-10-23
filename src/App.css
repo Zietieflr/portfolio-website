@@ -84,6 +84,12 @@ h6 {
   width: inherit;
 }
 
+@media only screen and (max-width: 740px) {
+  .project-nav > ul.project-nav-container {
+    display: block;
+  }
+}
+
 .primary-nav > ul {
   font-family: 'Alegreya Sans SC', sans-serif;
 }

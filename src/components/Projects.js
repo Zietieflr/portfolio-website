@@ -27,7 +27,7 @@ export default function Projects(props){
         <Route path="/projects" render={() => {
           return (
             <nav className="project-nav">
-              <ul>
+              <ul className="project-nav-container">
                 {renderProjects()}
               </ul>
             </nav>

@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { GitHubCalendar } from "github-calendar"
 
 import Title from "./Title";
 import ExternalLinks from "./ExternalLinks";
@@ -30,6 +31,7 @@ export default function GitHub(){
       global_stats: false,
       tooltips: true,
     })`;
+    // GitHubCalendar()
     $renderGitHub.async = true; 
     document.body.appendChild($renderGitHub);
   }

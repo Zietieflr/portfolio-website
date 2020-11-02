@@ -247,6 +247,11 @@ div.contrib-legend {
   I chose to override with a highly specific tag rather than adding more
   on 'load' logic to React. */
   min-height: fit-content !important;
+  --color-calendar-graph-day-bg: #dddbdb;
+  --color-calendar-graph-day-L1-bg: #39dd34;
+  --color-calendar-graph-day-L2-bg: #45a045;
+  --color-calendar-graph-day-L3-bg: #047526;
+  --color-calendar-graph-day-L4-bg: #0a4208;
 }
 
 .project-item {

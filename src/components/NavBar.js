@@ -8,17 +8,14 @@ export default function NavBar() {
         <li>
           <NavLink to="/about">About</NavLink>
         </li>
-        {/* <li>
-          <NavLink to="/contact">Contact Me</NavLink>
-        </li> */}
         <li>
-          <NavLink to="/github">GitHub</NavLink>
-        </li>
-        <li>
-          <NavLink to="/medium">Medium</NavLink>
+          <NavLink to="/repositories">Repositories</NavLink>
         </li>
         <li>
           <NavLink to="/projects/o-tock">Projects</NavLink>
+        </li>
+        <li>
+          <NavLink to="/medium">Medium</NavLink>
         </li>
       </ul>
     </nav>

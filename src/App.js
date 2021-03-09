@@ -4,8 +4,7 @@ import { BrowserRouter as Router, Route, Switch, Link } from "react-router-dom";
 import NavBar from "./components/NavBar";
 import Landing from "./components/Landing";
 import About from "./components/About";
-// import ContactMe from "./components/ContactMe";
-import GitHub from "./components/GitHub";
+import Repositories from "./components/Repositories";
 import Medium from "./components/Medium";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer"
@@ -28,11 +27,8 @@ function App() {
             <Route path="/about" render={() => {
               return <About /> }}
             />
-            {/* <Route path="/contact" render={() => {
-              return <ContactMe /> }}
-            /> */}
-            <Route path="/github" render={() => {
-              return <GitHub /> }}
+            <Route path="/repositories" render={() => {
+              return <Repositories /> }}
             />
             <Route path="/medium" render={() => {
               return <Medium /> }}

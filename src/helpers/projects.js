@@ -86,7 +86,6 @@ projectsArray.push({
   descriptionShort: "This site!",
   descriptionLong: "I built this site to showcase a bit about myself and continue working "
     + "on my skills as a developer. I used React and React Router to build all of the basic "
-    + "functionality. I included widgets for both the GitHub Calendar and the Medium Blog "
-    + "displays. For the image carousels I included React Slick, both for speed and the "
-    + "accessibility features it included out of the box."
+    + "functionality. I included widgets for the Medium Blog display and React "
+    + "Slick for the image carousels."
 });
